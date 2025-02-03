@@ -17,6 +17,8 @@
 #  You should have received a copy of the GNU General Public License
 #  along with udpxy.  If not, see <http://www.gnu.org/licenses/>.
 #
+CC = arm-linux-gnueabihf-gcc
+CXX = arm-linux-gnueabihf-g++
 
 .SUFFIXES : .o .c .d
 
