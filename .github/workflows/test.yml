@@ -1,8 +1,12 @@
 name: Check Repository Path
+
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Optional message for the run'
+        required: false
+        default: 'Manual run'
 
 jobs:
   check-path:
