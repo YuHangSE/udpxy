@@ -27,8 +27,8 @@ jobs:
           export CC=arm-linux-gnueabihf-gcc
           export CXX=arm-linux-gnueabihf-g++
           cd /home/runner/work/udpxy/udpxy
-          autoreconf --install
-          ./configure --host=arm-linux-gnueabihf --prefix=/usr/arm-linux-gnueabihf
+          # autoreconf --install
+          # ./configure --host=arm-linux-gnueabihf --prefix=/usr/arm-linux-gnueabihf
           make
           
       - name: Save Exec
