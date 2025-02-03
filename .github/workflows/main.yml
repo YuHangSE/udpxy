@@ -35,5 +35,5 @@ jobs:
       - name: Save Exec
         uses: actions/upload-artifact@v4
         with:
-          name: udpxy
-          path: /usr/local/bin/
+          name: udpxy & udpxrec
+          path: /usr/local/bin/udp*
