@@ -1,7 +1,13 @@
 name: Build for TVBox
 
-on: []
-
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Optional message for the run'
+        required: false
+        default: 'Manual run'
+        
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,4 +32,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: udpxy.armv7l
-          path: 
+          path: /home/work/udpxy/udpxy/udpxy
