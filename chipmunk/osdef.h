@@ -60,9 +60,11 @@
 #endif
 
 #if defined(HAS_VARRUN)
-    #define PIDFILE_DIR     "/var/run"
+    #define PIDFILE_DIR     "/data/local/var/run"
 #elif defined(HAS_VARTMP)
-    #define PIDFILE_DIR     "/var/tmp"
+    #define PIDFILE_DIR     "/data/local/var/tmp"
+#else
+    #define PIDFILE_DIR "/data/local"
 #endif
 
 #endif /* UDPXY_OSDEFH_0101082158 */
