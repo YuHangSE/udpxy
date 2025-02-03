@@ -30,9 +30,10 @@ jobs:
           # autoreconf --install
           # ./configure --host=arm-linux-gnueabihf --prefix=/usr/arm-linux-gnueabihf
           make
+          make install
           
       - name: Save Exec
         uses: actions/upload-artifact@v4
         with:
           name: udpxy.armv7l
-          path: /home/work/udpxy/udpxy/chipmunk/udpxy
+          path: /usr/local/bin/udpxy
