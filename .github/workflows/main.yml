@@ -33,7 +33,7 @@ jobs:
           make install
           
       - name: Save Exec
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
-          name: udpxy.armv7l
-          path: /usr/local/bin/udpxy
+          name: udpxy
+          path: /usr/local/bin/*
